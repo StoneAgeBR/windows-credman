@@ -17,9 +17,9 @@
     "url": "git+ssh://git@github.com:StoneAgeBR/windows-credman.git"
   },
   "scripts": {
-    "prepublish": "rebuild.cmd",
     "rebuild": "rebuild.cmd",
-    "install": "echo using files in lib folder"
+    "install": "echo using files in lib folder",
+    "postinstall": "rebuild.cmd"
   },
   "keywords": [
     "windows",
