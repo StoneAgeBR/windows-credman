@@ -1,6 +1,6 @@
 {
   "name": "@stoneagebr/windows-credman",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Native wrapper for Windows Credential Manager",
   "os": [
     "win32"
