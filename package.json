@@ -1,5 +1,5 @@
 {
-  "name": "windows-credman",
+  "name": "@stoneagebr/windows-credman",
   "version": "1.0.0",
   "description": "Native wrapper for Windows Credential Manager",
   "os": [
@@ -8,14 +8,13 @@
   "main": "index.js",
   "gypfile": true,
   "author": {
-    "name": "Stanislav Vyschepan",
-    "email": "gandjustas@mail.ru",
-    "url": "http://blog.gandjustas.ru/"
+    "name": "StoneAgeBR",
+    "url": "https://www.stoneage.com.br/"
   },
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/gandjustas/windows-credman.git"
+    "url": "git+ssh://git@github.com:StoneAgeBR/windows-credman.git"
   },
   "scripts": {
     "prepublish": "rebuild.cmd",
@@ -30,7 +29,7 @@
     "credman",
     "credential manager"
   ],
-  "homepage": "https://github.com/gandjustas/windows-credman#readme",
+  "homepage": "https://github.com/StoneAgeBR/windows-credman#readme",
   "dependencies": {
     "bindings": "^1.2.1",
     "nan": "^2.4.0"
