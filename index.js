@@ -1,1 +1,1 @@
-module.exports = require('./lib/windows-credman-'+process.arch);
+module.exports = require('./lib/windows-credman-' + process.arch + '.node');
