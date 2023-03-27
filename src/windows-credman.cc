@@ -18,18 +18,13 @@ NAN_METHOD(GetCredentials) {
     return;
   }
 
-  auto targetName = info[0]->ToString();
-  auto length = targetName->Length();
-  
+  v8::Isolate* isolate = info.GetIsolate();
+  v8::String::Utf8Value str(isolate, info[0]);
 
-  #ifdef UNICODE
-    String::Value buffer(targetName);
-  #else
-    String::Utf8Value buffer(targetName);
-  #endif
+  auto length = str.length();
 
   PCREDENTIAL cred;
-  if(::CredRead(*buffer, CRED_TYPE_GENERIC, 0, &cred))
+  if(::CredRead(*str, CRED_TYPE_GENERIC, 0, &cred))
   {
     auto blobSize = cred->CredentialBlobSize;
   
